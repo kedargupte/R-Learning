@@ -1,0 +1,19 @@
+{
+    "contents" : "# Lists\n\n# List is basically a key value pair where value can be other data structure\nvar_list <- list(\"string\", 1, 5);\nis.list(var_list);\nvar_list;\nstr(var_list);\n\nnames(var_list) <- c(\"col1\", \"col2\", \"col3\");\nvar_list;\nstr(var_list);\n\n# Subsetting a list\nvar_list2 <- list(c(\"A\", \"B\"), 1:4, matrix(1:6, ncol = 2, nrow = 3));\nstr(var_list2);\nnames(var_list2) <- c(\"vec_c\", \"vec_n\", \"mat\");\nstr(var_list2);\n# Subsetting using single bracket results in list\nvar_list2[1];\n# Subsetting using double square brackets results in actual content\nvar_list2[[1]];\n\nvar_list2[\"mat\"];\nclass(var_list2[\"mat\"]);\nvar_list2[[\"mat\"]];\nclass(var_list2[[\"mat\"]]);\n\n# $ sign and [[]] are equivalent during subsetting of vector\nvar_list2$vec_n;\nvar_list2[[\"vec_n\"]];\n\n# Adding new vector to the list\nvar_list2$add_vec <- c(4:6);\nstr(var_list2);\n# Replacing the added list. $ and [[]] are equivalent during extension\nvar_list2[[\"add_vec\"]] <- c(7:9);\nstr(var_list2);\n# Appending the list to already available list\nvar_list2[[\"add_vec\"]] <- c(var_list2[[\"add_vec\"]],c(10:12));\nstr(var_list2);\n\n# Returns sub lists for first and second contents of the list\nvar_list2[c(1,2)];\n# Returns 4th element from 2nd vector in list\nvar_list2[[c(2,4)]];",
+    "created" : 1457374858983.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "651287326",
+    "id" : "CD671383",
+    "lastKnownWriteTime" : 1458907527,
+    "path" : "C:/Personal/GitHub/R-Learning/R Basic/R Lists.R",
+    "project_path" : "R Lists.R",
+    "properties" : {
+        "notebook_format" : "html_document",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

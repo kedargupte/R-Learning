@@ -1,0 +1,19 @@
+{
+    "contents" : "# Data Frame\n\n# Table like structure, to store data\n\nvec_name <- c(\"Name1\", \"Name2\", \"Name3\");\nvec_age <- c(23, 26, 21);\nvec_cs <- c(T, F, T);\n\ndata_frame <- data.frame(Name = vec_name, \n                         Age = vec_age,\n                         Major_CS = vec_cs);\n\ndata_frame;\nstr(data_frame);\n\n# Data frames are iternally stored as lists\n# Strings are casted to factors by default\n\ndata_frame <- data.frame(Name = vec_name, \n                         Age = vec_age,\n                         Major_CS = vec_cs,\n                         stringsAsFactors = F);\nstr(data_frame);\n\nnames(data_frame) <- c(\"Name_Col\", \"Age_Col\", \"Major_Col\");\nstr(data_frame);\n\ndata_frame;\n\n# Data frame subsetting similar to Matrix - row, column\n# Index number or name would work\n\n# Matrix notation\ndata_frame[2,3];\nis.vector(data_frame[2,3]);\n\ndata_frame$Age_Col;\nis.vector(data_frame$Age_Col);\n\n# Returns a data frame column\ndata_frame[2];\nis.vector(data_frame[2]);\nis.data.frame(data_frame[2]);\n\n# Returns the actual data structure type\ndata_frame[[2]];\nis.vector(data_frame[[2]]);\nis.data.frame(data_frame[[2]]);\n\n# Adding Column\ndata_frame$new_col1 <- c(1,2,3);\n\n# cbind and rbind works well too\ncbind(data_frame, c(4,5,6));\n\n# rbind will require having a data frame to append to existing data\ndata_frame;\n\nnew_row <- data.frame(Name_Col = \"Name4\", \n                      Age_Col = 26,\n                      Major_Col = T,\n                      new_col1 = 4);\n\ndata_frame <- rbind(data_frame, new_row);\n\n# Sorts a single given vector\nsort(data_frame$Age_Col);\n\n# Order function returns ranks, which can then be used for sorting\norder(data_frame$Age_Col);\n\ndata_frame[data_frame$Age_Col > 24,];\n\ndata_frame[order(data_frame$Age_Col),];\n\ndata_frame[order(data_frame$new_col1, decreasing = T),];\n\n\n\n\n",
+    "created" : 1457460055292.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2845966237",
+    "id" : "E9E74BCF",
+    "lastKnownWriteTime" : 1458985156,
+    "path" : "C:/Personal/GitHub/R-Learning/R Basic/R Data Frame.R",
+    "project_path" : "R Data Frame.R",
+    "properties" : {
+        "notebook_format" : "html_document",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

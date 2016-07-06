@@ -1,0 +1,19 @@
+{
+    "contents" : "# Matrices\n# 2D array of data elements\n\n# Data population is column wise by default\nm0 <- matrix(1:6);\nm0;\nm1 <- matrix(1:6, nrow=2);\nm1;\nm2 <- matrix(1:6, ncol=2);\nm2;\n\nm3 <- matrix(1:6, nrow=2, byrow = T);\nm3;\n\n# Matrices have repeatable data filling\n# It is called Recycling, warning given\nm4 <- matrix(1:4, nrow=2, ncol=3, byrow = T);\nm4;\n\n# Combine two vecors or matrices together to matrix\nrbind(1:4, 6:9);\ncbind(1:4, 6:9);\ncbind(11:12, m3);\ncbind(m3, 11:12);\n\n# Length of number of row and columns should match\nrnames <- c(\"row1\", \"row2\");\ncnames <- c(\"col1\", \"col2\", \"col3\");\nrownames(m3) <- rnames;\ncolnames(m3) <- cnames;\nm3;\n\n# Matrix subsetting\n# Returns 5 element traversed in columnar format\nm3[5];\n# Returns row\nm3[1,];\n# Returns column\nm3[,2];\nis.vector(m3[,2]);\n# Row Column specified\nm3[2,3];\nm3[c(1,2), c(2,3)];\nis.vector(m3[c(1,2), c(2,3)]);\nclass(m3[c(1,2), c(2,3)]);\n\nm3[\"row1\", \"col2\"];\n\n# subsetting by logical vectors is feasible, not understandable why\n\n# Arithmatic of matrices happen element by element\n# Unlike usual matrix computations\n",
+    "created" : 1457287649959.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "614566144",
+    "id" : "7EC0E087",
+    "lastKnownWriteTime" : 1458905659,
+    "path" : "C:/Personal/GitHub/R-Learning/R Basic/R Matrices.R",
+    "project_path" : "R Matrices.R",
+    "properties" : {
+        "notebook_format" : "html_document",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

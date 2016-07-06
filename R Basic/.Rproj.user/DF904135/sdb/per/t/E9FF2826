@@ -1,0 +1,18 @@
+{
+    "contents" : "# R Data Types\n\n# Logical\n# T F TRUE FALSE NA\nis.logical(T);\nis.logical(NA);\n\n# character\n\n# numeric\nclass(2);\nis.numeric(5.7);\n\n# integer\nclass(2L);\nis.integer(4L);\nis.integer(5);\n\n# double\n\n# complex\n\n# raw\n",
+    "created" : 1457264117151.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3879419836",
+    "id" : "E9FF2826",
+    "lastKnownWriteTime" : 1457264432,
+    "path" : "C:/Personal/GitHub/R-Learning/R Basic/R Data Types.R",
+    "project_path" : "R Data Types.R",
+    "properties" : {
+        "notebook_format" : "html_document"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,19 @@
+{
+    "contents" : "# Factors\n# Factors are used for categorical variables\n# Factors can be converted from vectors\n\nvar_vector <- c(\"A\", \"B\", \"AB\", \"A\", \"O\");\nvar_factor <- factor(var_vector);\nvar_factor;\nstr(var_vector);\nstr(var_factor);\nsummary(var_factor);\n\n# Factors are internally stored as integer vectors. Indexed using levels\n# Levels are computed automatically and sorted alphabetically, else one can specify them\n\nvar2_vector <- c(\"L\", \"H\", \"L\", \"M\", \"H\");\nvar2_factor <- \n  factor(var2_vector,\n         levels = c(\"L\", \"M\", \"H\"),\n         labels = c(\"Low\", \"Medium\", \"High\"),\n         ordered = T);\nstr(var2_factor);\nsummary(var2_factor);\n\n# Levels and Labels are in 1:1 correspondance\n# Factor is change in internal storage representation\n# Subsetting is same as Vectors\n# Label name if used should be specified for figuring out the occurrence\nvar2_factor==\"Low\";\nclass(var2_factor==\"Low\");\nis.vector(var2_factor==\"Low\");\nvar2_factor[2];\n\n",
+    "created" : 1457361919014.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3891067879",
+    "id" : "E2916034",
+    "lastKnownWriteTime" : 1458907461,
+    "path" : "C:/Personal/GitHub/R-Learning/R Basic/R Factors.R",
+    "project_path" : "R Factors.R",
+    "properties" : {
+        "notebook_format" : "html_document",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

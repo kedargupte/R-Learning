@@ -1,0 +1,19 @@
+{
+    "contents" : "# Vectors\n\n# Sequence of data elements, same data type\n\nsuit <- c(\"H\", \"D\", \"S\", \"c\");\nsuit;\n\nis.vector(suit);\n\n# While naming names go first\n# Name is anologous to key and then it is value\n# If key is duplicated Value of first element is considered\nsuit_names <- c(\"H\"=1, \"D\"=2, \"S\"=3, \"C\"=4);\nsuit_names;\n\nnames <- c(\"Type1\",\"Type2\",\"Type3\",\"Type4\");\n\nnames(suit) <- names;\nsuit;\nstr(suit);\nclass(suit);\nsuit[\"Type3\"];\nsuit[3];\nsuit_names[\"H\"];\nsuit_names[2];\n\n# Vectors with different data types are coerced\n\n# Vector arithmatic\n# Every variable value is also a vector\n# Vector arithmatic is element based\n\nearnings <- c(50,60,70);\nexpenses <- c(30,50,80);\n\nearnings - expenses;\nsum(earnings);\nsum(expenses);\nearnings>expenses;\n\n# Vector subsetting\nsuit[c(1,2)];\n# Returns NA rather than exception\nsuit[c(1,2,5)];\nsuit[-c(3,4)];\nsuit[-c(3,4,5)];\n# Subsetting using logical vector\n# If not specifed, defaulted to True\nsuit[c(T,F,T)];\n\n",
+    "created" : 1457263565449.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2039973754",
+    "id" : "FB3ABD38",
+    "lastKnownWriteTime" : 1458906571,
+    "path" : "C:/Personal/GitHub/R-Learning/R Basic/R Vectors.R",
+    "project_path" : "R Vectors.R",
+    "properties" : {
+        "notebook_format" : "html_document",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
